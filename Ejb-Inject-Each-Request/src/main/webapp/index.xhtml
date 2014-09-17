@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+
+</h:head>
+<h:body>
+	<p>JSF</p>
+	
+	<p>Info: #{indexController.info}</p>
+	<h:form>
+		<label>Customer ID: </label>
+		<h:inputText value="#{indexController.login.customerId}" required="true" requiredMessage="Customer ID required" />
+		<br/>
+		<label>Username: </label>
+		<h:inputText value="#{indexController.login.username}" required="true" requiredMessage="Username required" />
+		<br/>
+		<h:commandButton value="Sign in" action="#{indexController.signIn}" />
+		<br/>
+		<h:messages />
+	</h:form>
+</h:body>
+</html>
